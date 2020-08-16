@@ -7,11 +7,11 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "build": "yarn remove:dist && yarn build:js",
+    "build": "yarn remove:dist && yarn build:css && yarn build:js",
     "build:css": "yarn build:css:node-sass && yarn build:css:postcss",
     "build:css:node-sass": "lerna exec -- node-sass scss/style.scss dist/css/style.css --output-style compressed",
     "build:css:postcss": "lerna exec -- postcss dist/css/style.css --no-map --replace --use autoprefixer",
-    "build:js": "lerna exec -- babel --root-mode upward js --out-dir dist/js",
+    "build:js": "lerna exec -- babel --root-mode upward ./ --out-dir dist",
     "remove:dist": "lerna exec -- rimraf dist",
     "remove:node_modules": "lerna exec -- rimraf node_modules",
     "sort-packages": "sort-package-json && lerna exec -- sort-package-json"
@@ -37,6 +37,7 @@
     "@babel/eslint-plugin": "^7.11.3",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
+    "babel-plugin-replace-import-extensions": "^1.0.1",
     "eslint": "^7.6.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
