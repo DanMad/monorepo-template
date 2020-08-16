@@ -23,11 +23,11 @@
   },
   "lint-staged": {
     "**/*": "prettier --write",
-    "packages/**/*.+(js|jsx)": [
-      "eslint . --fix"
-    ],
     "packages/**/*.scss": [
       "stylelint --syntax scss --fix"
+    ],
+    "packages/**/*.+(js|jsx)": [
+      "eslint . --fix"
     ]
   },
   "devDependencies": {
