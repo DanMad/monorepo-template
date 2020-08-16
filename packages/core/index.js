@@ -1,4 +1,4 @@
-import greet from './greet';
+import greet from './js/greet';
 
 const YourModule = {
   greet,
