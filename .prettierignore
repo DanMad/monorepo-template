@@ -13,6 +13,9 @@ dist
 # MacOS
 .DS_Store
 
+# Node Package Manager
+.npmrc
+
 # Node Version Manager
 .nvmrc
 
