@@ -1,0 +1,44 @@
+{
+  "name": "@your-scope/component",
+  "version": "1.0.0",
+  "description": "Monorepo starter component",
+  "homepage": "https://github.com/username/monorepo-starter#readme",
+  "bugs": {
+    "url": "https://github.com/username/monorepo-starter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/monorepo-starter.git",
+    "directory": "packages/component"
+  },
+  "license": "MIT",
+  "author": "Your name",
+  "main": "dist/index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/eslint-parser": "^7.11.3",
+    "@babel/eslint-plugin": "^7.11.3",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "@your-scope/core": "^1.0.0",
+    "autoprefixer": "^9.8.6",
+    "eslint": "^7.6.0",
+    "node-sass": "^4.14.1",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.3",
+    "sort-package-json": "^1.44.0"
+  },
+  "peerDependencies": {
+    "@your-scope/core": "^1.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
