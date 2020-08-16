@@ -1,0 +1,38 @@
+{
+  "name": "@your-scope/core",
+  "version": "1.0.0",
+  "description": "Monorepo starter core",
+  "homepage": "https://github.com/username/monorepo-starter#readme",
+  "bugs": {
+    "url": "https://github.com/username/monorepo-starter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/monorepo-starter.git",
+    "directory": "packages/core"
+  },
+  "license": "MIT",
+  "author": "Your name",
+  "main": "dist/index.js",
+  "files": [
+    "dist/**/*.+(css|js|jsx)",
+    "scss/**/*.scss"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/eslint-parser": "^7.11.3",
+    "@babel/eslint-plugin": "^7.11.3",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "autoprefixer": "^9.8.6",
+    "eslint": "^7.6.0",
+    "node-sass": "^4.14.1",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.1",
+    "sort-package-json": "^1.44.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
