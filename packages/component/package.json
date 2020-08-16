@@ -1,0 +1,35 @@
+{
+  "name": "@your-scope/component",
+  "version": "1.0.0",
+  "description": "Monorepo starter component",
+  "homepage": "https://github.com/username/monorepo-starter#readme",
+  "bugs": {
+    "url": "https://github.com/username/monorepo-starter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/monorepo-starter.git",
+    "directory": "packages/component"
+  },
+  "license": "MIT",
+  "author": "Your name",
+  "main": "dist/index.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "devDependencies": {
+    "@your-scope/core": "^1.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.3"
+  },
+  "peerDependencies": {
+    "@your-scope/core": "^1.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

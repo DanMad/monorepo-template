@@ -1,0 +1,66 @@
+{
+  "name": "monorepo-starter",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "build": "yarn remove:dist && yarn build:css && yarn build:js",
+    "build:css": "yarn build:css:node-sass && yarn build:css:postcss",
+    "build:css:node-sass": "lerna exec -- node-sass src/scss/style.scss dist/css/style.css --output-style compressed",
+    "build:css:postcss": "lerna exec -- postcss dist/css/style.css --no-map --replace --use autoprefixer",
+    "build:js": "lerna exec -- babel --root-mode upward src --out-dir dist",
+    "remove:dist": "lerna exec -- rimraf dist",
+    "remove:node_modules": "lerna exec -- rimraf node_modules",
+    "sort-packages": "sort-package-json && lerna exec -- sort-package-json"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*": "prettier --write",
+    "packages/**/*.+(js|jsx)": [
+      "eslint . --fix"
+    ],
+    "packages/**/*.scss": [
+      "stylelint --syntax scss --fix"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/eslint-parser": "^7.11.3",
+    "@babel/eslint-plugin": "^7.11.3",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "autoprefixer": "^9.8.6",
+    "babel-plugin-replace-import-extensions": "^1.0.1",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "husky": "^4.2.5",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.2.11",
+    "node-sass": "^4.14.1",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.1",
+    "prettier": "^2.0.5",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.3",
+    "rimraf": "^3.0.2",
+    "sort-package-json": "^1.44.0",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "engines": {
+    "node": "12.13.0"
+  }
+}

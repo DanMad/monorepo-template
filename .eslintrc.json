@@ -1,0 +1,16 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": ["prettier", "plugin:react/recommended", "airbnb"],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": ["@babel", "react"]
+}
