@@ -1,7 +1,7 @@
 // import React from 'react';
 // import PropTypes from 'prop-types';
 // import { greet } from '@your-scope/core';
-// import './css/style.scss';
+// import '../scss/style.scss';
 
 // const Component = ({ name }) => <p>{greet(name)}</p>;
 
