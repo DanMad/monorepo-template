@@ -1,0 +1,20 @@
+# Dependencies
+node_modules
+
+# Distributed version
+dist
+
+# Ignore files
+.eslintignore
+.gitignore
+.prettierignore
+.stylelintignore
+
+# MacOS
+.DS_Store
+
+# Node Version Manager
+.nvmrc
+
+# Package files
+yarn.lock

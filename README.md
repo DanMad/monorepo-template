@@ -1,2 +1,1 @@
-# monorepo-starter
-Monorepo starter template
+# Monorepo starter
