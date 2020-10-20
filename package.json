@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "build": "yarn remove:dist && yarn build:css && yarn build:js",
+    "build": "yarn remove:dist && yarn build:css && yarn build:js && yarn sort-packages",
     "build:css": "yarn build:css:node-sass && yarn build:css:postcss",
     "build:css:node-sass": "lerna exec -- node-sass src/scss/style.scss dist/css/style.css --output-style compressed",
     "build:css:postcss": "lerna exec -- postcss dist/css/style.css --no-map --replace --use autoprefixer",
@@ -53,12 +53,13 @@
     "postcss": "^7.0.32",
     "postcss-cli": "^7.1.1",
     "prettier": "^2.0.5",
+    "prop-types": "^15.7.2",
     "react": "^16.6.1",
     "react-dom": "^16.6.3",
     "rimraf": "^3.0.2",
     "sort-package-json": "^1.44.0",
     "stylelint": "^13.6.1",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint-config-sass-guidelines": "^7.1.0"
   },
   "engines": {
     "node": "12.13.0"
