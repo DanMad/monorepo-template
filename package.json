@@ -7,14 +7,17 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "build": "yarn remove:dist && yarn build:css && yarn build:js && yarn sort-packages",
+    "build": "yarn remove:dist && yarn build:css && yarn build:js",
     "build:css": "yarn build:css:node-sass && yarn build:css:postcss",
     "build:css:node-sass": "lerna exec -- node-sass src/scss/style.scss dist/css/style.css --output-style compressed",
     "build:css:postcss": "lerna exec -- postcss dist/css/style.css --no-map --replace --use autoprefixer",
-    "build:js": "lerna exec -- babel --root-mode upward src --out-dir dist",
+    "build:js": "lerna exec -- babel --root-mode upward src --ignore \"**/*.test.js\",\"**/*.test.jsx\" --out-dir dist",
     "remove:dist": "lerna exec -- rimraf dist",
     "remove:node_modules": "lerna exec -- rimraf node_modules",
-    "sort-packages": "sort-package-json && lerna exec -- sort-package-json"
+    "sort-packages": "sort-package-json && lerna exec -- sort-package-json",
+    "test": "jest",
+    "test:coverage": "jest --coverage --colors",
+    "test:watch": "jest --watch"
   },
   "husky": {
     "hooks": {
@@ -47,6 +50,7 @@
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.0.8",
     "husky": "^4.2.5",
+    "jest": "^26.6.1",
     "lerna": "^3.22.1",
     "lint-staged": "^10.2.11",
     "node-sass": "^4.14.1",
