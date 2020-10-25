@@ -7,8 +7,12 @@ dist
 # Ignore files
 .eslintignore
 .gitignore
+.npmignore
 .prettierignore
 .stylelintignore
+
+# License
+LICENSE
 
 # MacOS
 .DS_Store
