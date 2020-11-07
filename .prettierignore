@@ -1,9 +1,6 @@
 # Dependencies
 node_modules
 
-# Distributed version
-dist
-
 # Ignore files
 .eslintignore
 .gitignore
