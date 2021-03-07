@@ -1,11 +1,4 @@
 {
-  "plugins": [
-    [
-      "replace-import-extensions",
-      {
-        "scss/style.scss$": "css/style.css"
-      }
-    ]
-  ],
-  "presets": ["@babel/preset-react", "@babel/preset-env"]
+  "plugins": [["@babel/plugin-proposal-class-properties"]],
+  "presets": ["@babel/env", "@babel/preset-react"]
 }

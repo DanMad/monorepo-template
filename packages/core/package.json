@@ -18,6 +18,9 @@
     "dist/**/*",
     "src/**/*.scss"
   ],
+  "scripts": {
+    "build": "webpack --config ../../webpack.config.js"
+  },
   "publishConfig": {
     "access": "public"
   }
