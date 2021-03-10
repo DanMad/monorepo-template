@@ -2,11 +2,7 @@
 node_modules
 
 # Ignore files
-.eslintignore
-.gitignore
-.npmignore
-.prettierignore
-.stylelintignore
+*ignore
 
 # License
 LICENSE
@@ -14,11 +10,8 @@ LICENSE
 # MacOS
 .DS_Store
 
-# Node Package Manager
-.npmrc
-
-# Node Version Manager
-.nvmrc
-
 # Package files
 yarn.lock
+
+# Run Command files
+*rc
