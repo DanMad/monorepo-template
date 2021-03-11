@@ -1,7 +1,3 @@
-import greet from './js/greet';
+import core, { greet } from './core';
 
-const YourModule = {
-  greet,
-};
-
-export { YourModule as default, greet };
+export { core as default, greet };

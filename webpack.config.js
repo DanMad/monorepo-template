@@ -35,4 +35,8 @@ module.exports = {
     extensions: ['.js', '.jsx'],
     modules: ['node_modules'],
   },
+  externals: {
+    react: 'react',
+    'react-dom': 'react-dom',
+  },
 };
