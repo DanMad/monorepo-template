@@ -13,5 +13,9 @@
     "ecmaVersion": 11,
     "sourceType": "module"
   },
-  "plugins": ["@babel", "react"]
+  "plugins": ["@babel", "react"],
+  "rules": {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
+  }
 }

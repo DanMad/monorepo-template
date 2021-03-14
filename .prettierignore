@@ -2,7 +2,7 @@
 node_modules
 
 # Ignore files
-*ignore
+.*ignore
 
 # License
 LICENSE
@@ -14,4 +14,7 @@ LICENSE
 yarn.lock
 
 # Run Command files
-*rc
+.*rc
+
+# Files within hidden folders
+.*/**
