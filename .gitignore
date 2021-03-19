@@ -4,6 +4,9 @@ node_modules
 # Distributed version
 dist
 
+# Jest coverage
+coverage
+
 # Logs
 *.log
 
