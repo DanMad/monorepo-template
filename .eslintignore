@@ -6,3 +6,6 @@ dist
 
 # MacOS
 .DS_Store
+
+# Webpack config
+webpack.config.js

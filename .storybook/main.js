@@ -15,12 +15,6 @@ module.exports = {
     "@storybook/addon-essentials"
   ],
   webpackFinal: async (config, { configType }) => {
-    config.module.rules = webpackConfig.module.rules;
-    
-    config.module.rules = config.module.rules.filter(
-      f => f.test.toString() !== '/\\.(scss)$/'
-    );
-
     config.module.rules.push({
       test: /\.(scss)$/,
       use: [

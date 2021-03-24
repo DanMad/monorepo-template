@@ -1,20 +1,16 @@
 const babel = require('./babel.config.json');
 
 module.exports = {
+  devtool: 'source-map',
   module: {
     rules: [
       {
         exclude: /node_modules/,
         test: /\.(scss)$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'postcss-loader',
-          'sass-loader',
-        ],
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       },
       {
-        test: /\.(js|jsx)$/,
+        test: /\.jsx?/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -22,6 +18,11 @@ module.exports = {
             presets: babel.presets,
           },
         },
+      },
+      {
+        test: /\.tsx?/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
       },
     ],
   },
@@ -32,7 +33,7 @@ module.exports = {
     libraryTarget: 'commonjs',
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
     modules: ['node_modules'],
   },
   externals: {
