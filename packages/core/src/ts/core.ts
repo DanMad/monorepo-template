@@ -1,4 +1,4 @@
-import greet from './js/greet';
+import greet from './greet';
 
 const core = {
   greet,

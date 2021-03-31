@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import Component from './index';
+import Component from './component';
 
 export default {
   title: 'Component',
