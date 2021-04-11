@@ -1,6 +1,6 @@
 import { FunctionComponent, ReactElement } from 'react';
 import { greet } from '@your-scope/core';
-import './component.scss';
+import '../styles.scss';
 
 interface ComponentInterface {
   name?: string;
