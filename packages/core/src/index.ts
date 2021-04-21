@@ -1,3 +1,3 @@
-import core, { greet } from './ts/core';
+import core, { greet, tokens } from './ts/core';
 
-export { core as default, greet };
+export { core as default, greet, tokens };

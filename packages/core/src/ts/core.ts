@@ -1,6 +1,5 @@
 import greet from './greet';
-// @ts-ignore
-import tokens from '../js/tokens';
+import tokens from './tokens';
 
 const core = {
   greet,
