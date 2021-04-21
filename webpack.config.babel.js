@@ -1,5 +1,5 @@
-const babel = require('./babel.config.json');
 const jsonImporter = require('node-sass-json-importer');
+const babel = require('./babel.config.json');
 
 module.exports = {
   devtool: 'source-map',

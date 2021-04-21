@@ -1,4 +1,4 @@
-const colorSunshineYellow = '#f0f';
+const colorSunshineYellow = '#ff0';
 const colorBrandPrimary = colorSunshineYellow;
 
 const tokens = {
@@ -6,8 +6,4 @@ const tokens = {
   colorSunshineYellow,
 };
 
-module.exports = {
-  colorBrandPrimary,
-  colorSunshineYellow,
-  tokens,
-};
+export { colorBrandPrimary, colorSunshineYellow, tokens as default };
