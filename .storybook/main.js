@@ -1,8 +1,8 @@
-require('@babel/register');
+require("@babel/register")({ extensions: ['.js', '.ts'] });
 const glob = require('glob');
 const path = require('path');
 const jsonImporter = require('node-sass-json-importer');
-const webpackConfig = require('../webpack.config.babel.js');
+const webpackConfig = require('../webpack.config.babel.ts');
 
 const ROOT = path.resolve(__dirname, '../');
 const NODE_MODULES = path.resolve(ROOT, 'node_modules');
