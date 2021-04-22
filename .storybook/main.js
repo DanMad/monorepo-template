@@ -1,7 +1,7 @@
 require("@babel/register")({ extensions: ['.js', '.ts'] });
 const glob = require('glob');
 const path = require('path');
-const jsonImporter = require('node-sass-json-importer');
+const tokenImporter = require('node-sass-token-importer');
 const webpackConfig = require('../webpack.config.babel.ts');
 
 const ROOT = path.resolve(__dirname, '../');
@@ -35,7 +35,7 @@ module.exports = {
           options: {
             sassOptions: {
               includePaths: [NODE_MODULES],
-              importer: jsonImporter({
+              importer: tokenImporter({
                 convertCase: true,
               }),
             }
