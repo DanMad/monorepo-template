@@ -14,7 +14,7 @@ To get started, you will need to execute the following commands at the root dire
 
 ## Building
 
-To build your entire project, execute `yarn build`. To build CSS or JavaScript separately, execute `yarn build:css` or `yarn:build:js` respectively.
+To build your entire project, execute `yarn build`.
 
 ## Contributing
 
