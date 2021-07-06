@@ -1,14 +1,14 @@
 {
   "name": "@your-scope/core",
   "version": "1.0.0",
-  "description": "Monorepo starter core",
-  "homepage": "https://github.com/username/monorepo-starter#readme",
+  "description": "Monorepo template core",
+  "homepage": "https://github.com/your-username/monorepo-template#readme",
   "bugs": {
-    "url": "https://github.com/username/monorepo-starter/issues"
+    "url": "https://github.com/your-username/monorepo-template/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/username/monorepo-starter.git",
+    "url": "https://github.com/your-username/monorepo-template.git",
     "directory": "packages/core"
   },
   "license": "MIT",
