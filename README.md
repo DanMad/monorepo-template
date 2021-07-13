@@ -18,7 +18,7 @@ To build your entire project, execute `yarn build`.
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/DanMad/monorepo-template/blob/master/CONTRIBUTING.md).
+See [CONTRIBUTING.md](https://github.com/DanMad/monorepo-template/blob/main/CONTRIBUTING.md).
 
 ## Additional information
 
