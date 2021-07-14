@@ -16,9 +16,13 @@ To get going, you will need to execute the following commands at the root direct
 
 To build your entire project, execute `yarn build`.
 
+## Issues
+
+If you encounter any bugs, please [post an issue](https://github.com/DanMad/monorepo-template/issues/new).
+
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/DanMad/monorepo-template/blob/master/CONTRIBUTING.md).
+Contributions are more than welcome. Ensure you read through the [contributing guidelines](https://github.com/DanMad/monorepo-template/blob/main/CONTRIBUTING.md) before submitting a pull request.
 
 ## Additional information
 

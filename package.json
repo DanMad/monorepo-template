@@ -1,6 +1,7 @@
 {
   "name": "monorepo-template",
   "private": true,
+  "description": "A template for bootstrapping a monorepo",
   "license": "MIT",
   "workspaces": [
     "packages/*"
