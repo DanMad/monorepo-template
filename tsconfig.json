@@ -9,6 +9,7 @@
     "paths": {
       "@your-scope/*": ["packages/*/src"]
     },
+    "resolveJsonModule": true,
     "sourceMap": true,
     "strict": true,
     "target": "es2015"

@@ -1,7 +1,8 @@
-const tokenImporter = require('node-sass-token-importer');
-const babel = require('./babel.config.json');
+// @ts-ignore | This module needs types declared
+import tokenImporter from 'node-sass-token-importer';
+import babel from './babel.config.json';
 
-module.exports = {
+const webpackConfig = {
   devtool: 'source-map',
   module: {
     rules: [
@@ -56,3 +57,5 @@ module.exports = {
     'react-dom': 'react-dom',
   },
 };
+
+export { webpackConfig as default };
