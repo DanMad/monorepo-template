@@ -22,12 +22,8 @@ $ yarn build
 
 ## Issues
 
-If you encounter any bugs, please [post an issue](https://github.com/DanMad/monorepo-template/issues/new).
+If you encounter any bugs, please [post an issue](https://github.com/your-username/your-monorepo/issues/new).
 
 ## Contributing
 
-Contributions are more than welcome. Ensure you read through the [contributing guidelines](https://github.com/DanMad/monorepo-template/blob/main/CONTRIBUTING.md) before submitting a pull request.
-
-## Additional information
-
-The Monorepo Template's linters are configured with [Airbnb's JavaScript Style Guide](https://github.com/airbnb/javascript) and [Airbnb's CSS/Sass Style Guide](https://github.com/airbnb/css).
+Contributions are more than welcome. Ensure you read through the [contributing guidelines](https://github.com/your-username/your-monorepo/blob/main/CONTRIBUTING.md) before submitting a pull request.

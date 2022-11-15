@@ -3,8 +3,7 @@
 name: Push (main)
 
 env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+  NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
 on:
   push:
@@ -16,12 +15,10 @@ jobs:
     name: Create NPM Release
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
     - run: |
         npm install --global yarn
-        yarn bootstrap-frozen
+        yarn bootstrap --frozen-lockfile
         yarn build
-        chmod +x .github/scripts/write-npmrc.sh
-        .github/scripts/write-npmrc.sh
-        lerna publish from-package --no-verify-access --yes
+        lerna publish --contents dist
