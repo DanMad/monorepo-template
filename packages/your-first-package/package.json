@@ -1,16 +1,16 @@
 {
-  "name": "@your-scope/your-package",
+  "name": "@your-scope/your-first-package",
   "version": "1.0.0",
-  "description": "Your package description",
-  "homepage": "https://github.com/your-username/your-monorepo#readme",
+  "description": "Your first package description",
+  "homepage": "https://www.npmjs.com/package/@your-scope/your-first-package",
   "bugs": "https://github.com/your-username/your-monorepo/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/your-username/your-monorepo.git",
-    "directory": "packages/your-package"
+    "directory": "packages/your-first-package"
   },
   "license": "MIT",
-  "author": "Your name",
+  "author": "Your name <your-email>",
   "scripts": {
     "build": "webpack"
   },
@@ -18,5 +18,8 @@
     "@babel/core": "^7.20.2",
     "@babel/preset-env": "^7.20.2",
     "babel-loader": "^9.1.0"
+  },
+  "publishConfig": {
+    "directory": "dist"
   }
 }
