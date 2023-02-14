@@ -21,4 +21,4 @@ jobs:
         npm install --global yarn
         yarn bootstrap --frozen-lockfile
         yarn build
-        lerna publish --contents dist
+        lerna publish --yes from-package

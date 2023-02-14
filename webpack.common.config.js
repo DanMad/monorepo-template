@@ -2,27 +2,34 @@ const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  commonConfig(__contextualdirname) {
+  commonConfig(__packagedirname) {
     return {
-      entry: path.join(__contextualdirname, 'src', 'index'),
+      entry: path.resolve(__packagedirname, 'src'),
       mode: 'production',
       output: {
         clean: true,
-        path: path.join(__contextualdirname, 'dist'),
         filename: 'index.js',
         library: {
-          type: 'commonjs2',
+          type: 'umd',
         },
+        path: path.resolve(__packagedirname, 'dist'),
       },
       plugins: [
         new CopyPlugin({
           patterns: [
-            path.join(__dirname, 'LICENSE'),
-            path.join(__contextualdirname, 'package.json'),
-            path.join(__contextualdirname, 'README.md'),
+            path.resolve(__packagedirname, 'LICENSE'),
+            path.resolve(__packagedirname, 'package.json'),
+            path.resolve(__packagedirname, 'README.md'),
           ],
         }),
       ],
+      resolve: {
+        modules: [
+          path.resolve(__packagedirname, 'node_modules'),
+          path.resolve(__dirname, 'node_modules'),
+        ],
+        preferRelative: true,
+      },
     };
   },
 };

@@ -1,0 +1,29 @@
+{
+  "name": "@danmad/package",
+  "version": "1.0.0",
+  "description": "A monorepo package template for new projects",
+  "homepage": "https://github.com/danmad/monorepo-template/packages/package#readme",
+  "bugs": "https://github.com/danmad/monorepo-template/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danmad/monorepo-template.git",
+    "directory": "packages/package"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Daniel Maddison",
+    "email": "hello@danielmaddison.io",
+    "url": "https://www.danielmaddison.io"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2"
+  },
+  "publishConfig": {
+    "directory": "dist"
+  }
+}
