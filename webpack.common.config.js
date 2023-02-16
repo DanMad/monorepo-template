@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
   commonConfig(__packagedirname) {
     return {
-      entry: path.resolve(__packagedirname, 'src'),
+      entry: 'src',
       mode: 'production',
       output: {
         clean: true,
@@ -12,21 +12,16 @@ module.exports = {
         library: {
           type: 'umd',
         },
-        path: path.resolve(__packagedirname, 'dist'),
       },
       plugins: [
         new CopyPlugin({
-          patterns: [
-            path.resolve(__packagedirname, 'LICENSE'),
-            path.resolve(__packagedirname, 'package.json'),
-            path.resolve(__packagedirname, 'README.md'),
-          ],
+          patterns: ['LICENSE', 'package.json', 'README.md'],
         }),
       ],
       resolve: {
         modules: [
           path.resolve(__packagedirname, 'node_modules'),
-          path.resolve(__dirname, 'node_modules'),
+          'node_modules',
         ],
         preferRelative: true,
       },
