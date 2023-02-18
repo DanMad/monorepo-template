@@ -1,5 +1,13 @@
 # Monorepo Template
 
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Scripts](#scripts)
+- [Issues](#issues)
+- [Contributing](#contributing)
+
 ## Prerequisites
 
 This monorepo template requires that you have [Node.js](https://nodejs.org/en/)
@@ -30,8 +38,8 @@ yarn bootstrap
 
 ### Build
 
-The `build` script will build a production bundle of each package's `src/`
-directory to its respective `dist/` directory.
+The `build` script will build a production bundle of each package's `src`
+directory to its respective `dist` directory.
 
 ```sh
 yarn build
@@ -39,7 +47,7 @@ yarn build
 
 ### Unstrap
 
-The `unstrap` script will unstrap this monorepo template on your machine.
+The `unstrap` script will unstrap this monorepo template from your machine.
 
 ```sh
 yarn unstrap
